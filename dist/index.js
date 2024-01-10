@@ -16,7 +16,7 @@ app.get("/", (_req, res) => {
 });
 // Configurar CORS
 const corsOptions = {
-    origin: ["http://localhost:3000", "http://localhost:5000", "http://localhost:5173", "https://frontend-lake-five.vercel.app"], // Permite solicitudes solo desde esta URL
+    origin: ["http://localhost:3000", "http://localhost:5000", "http://localhost:5173", "https://frontend-lake-five.vercel.app", "https://front-liart-xi.vercel.app"], // Permite solicitudes solo desde esta URL
     optionsSuccessStatus: 200, // Algunos navegadores 204 (sin contenido) responde a las preflight OPTIONS con 204
 };
 app.use((0, cors_1.default)(corsOptions));
